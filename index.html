@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="./assets/fonts/all.min.css" />
+    <!-- WOW Animation CSS -->
+    <link rel="stylesheet" href="./assets/wow/animate.min.css" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="row py-lg-5 pb-5 justify-content-center">
+        <img
+          class="il-box animate__animated animate__zoomIn"
+          src="./assets/images/illustration-box-desktop.svg"
+          alt=""
+        />
+        <div class="col-lg-5 col-11 main-img">
+          <img
+            class="hero-img animate__animated animate__zoomIn"
+            src="./assets/images/illustration-woman-online-desktop.svg"
+            alt="illustration-woman-online-desktop"
+          />
+        </div>
+        <div class="col-lg-7 col-11 acc text-md-left text-center">
+          <h1>FAQ</h1>
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link btn-block text-left"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    How many team members can I invite?
+                    <i class="fa-solid fa-chevron-up"></i>
+                  </button>
+                </h2>
+              </div>
+
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  You can invite up to 2 additional users on the Free plan.
+                  There is no limit on team members for the Premium plan.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link btn-block text-left collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    What is the maximum file upload size?
+                    <i class="fa-solid fa-chevron-up"></i>
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  No more than 2GB. All files in your account must fit your
+                  allotted storage space.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link btn-block text-left collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    How do I reset my password?
+                    <i class="fa-solid fa-chevron-up"></i>
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  Click “Forgot password” from the login page or “Change
+                  password” from your profile page. A reset link will be emailed
+                  to you.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link btn-block text-left collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Can I cancel my subscription?
+                    <i class="fa-solid fa-chevron-up"></i>
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseFour"
+                class="collapse"
+                aria-labelledby="headingFour"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  Yes! Send us a message and we'll process your request no
+                  questions asked.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link btn-block text-left collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    Do you provide additional support?
+                    <i class="fa-solid fa-chevron-up"></i>
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseFive"
+                class="collapse"
+                aria-labelledby="headingFive"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  Chat and email support is available 24/7. Phone lines are open
+                  during normal business hours.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/Ibrahim-MohamedH"
+        >Ibrahim Mohamed Hussein</a
+      >.
+    </div>
+    <!-- Jquery file -->
+    <script src="./assets/jquery/jquery-3.6.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="./assets/bootstrap/popper.min.js"></script>
+    <script src="./assets/bootstrap/bootstrap.min.js"></script>
+    <!-- WOW Animation JS -->
+    <script src="./assets/wow/wow.min.js"></script>
+    <!-- Main JS -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
